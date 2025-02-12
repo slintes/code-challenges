@@ -16,7 +16,7 @@ func (r Recursive) Generate(nrOfElements int) []int {
 }
 
 func fib(f int) int {
-	if f == 0 || f == 1 {
+	if f <= 1 {
 		return f
 	}
 	return fib(f-2) + fib(f-1)
